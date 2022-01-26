@@ -25,7 +25,7 @@ STREAM_IMG = "https://telegra.ph/file/353c6d9242326eb0ca9af.jpg",
 STOP_IMG = "https://telegra.ph/file/1e099a211c8fbbd9c70ba.jpg"
 
 
-@Client.on_message(filters.command("radio"))
+@Client.on_message(filters.command("play"))
 async def stream(client, m: Message):
     if len(m.command) < 2:
         await m.reply_text('`🚫 You forgot to enter a Stream URL`')
